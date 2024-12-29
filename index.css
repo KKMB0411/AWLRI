@@ -1,0 +1,260 @@
+*{
+    border: 0px;
+    margin: 0px;
+    top: 0px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.home{
+    height: 100vh;
+    width: 100%;
+    background-image:url(assets/test.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+header{
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+}
+header tr td{
+    padding-left: 40px;
+}
+header td:hover{
+    cursor: pointer;
+}
+header table tr a{
+    text-decoration: none;
+    color: white;
+}
+.about{
+    position: absolute;
+    top: 8%;
+    display: none;
+}
+.about img{
+    height: 500px;
+    width: 60%;
+    border-radius: 20px;
+}
+
+.logo{
+    position: absolute;
+    top: 32%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation-name: logoanimation;
+    animation-duration: 2s;
+}
+@keyframes logoanimation {
+    0% {
+        transform: translate(-50%, 60%); 
+    }
+    100% {
+        transform: translate(-50%, -50%); 
+    }
+}
+.logo img{
+    height: 340px;
+    width: 340px;
+}
+
+.lionphoto{
+    top: 50px;
+    position: absolute;
+    right: 0px;
+    animation-name: lionanimation;
+    animation-duration: 2s;
+    
+}
+@keyframes lionanimation{
+    0%{
+        transform:translateX(100%);
+    }
+    100%{
+        top: 50px;
+        right: 0px;
+    }
+}
+.lionphoto img{
+    height: 640px;
+    width: 550px;
+}
+.intro{
+    position: absolute;
+    top: 55%;
+    left: 50px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    width: 600px;
+    animation-name: introanimation;
+    animation-duration: 2s;
+}
+@keyframes introanimation{
+    0%{
+        transform:translateX(-110%);
+    }
+    100%{
+        top: 55%;
+        left: 50px;
+    }
+}
+.intro h1{
+    font-size: 35px;
+    color: white;
+    padding-bottom: 20px;
+}
+.intro p{
+    color: white;
+    padding-bottom: 20px;
+}
+.register{
+    display: grid;
+}
+table{
+     margin-left: auto;
+     margin-right: auto;
+}
+
+table tr td button{
+    padding:10px 20px 10px 20px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    background-color: rgba(29, 29, 35, 0.5);
+}
+table tr td button a{
+    text-decoration: none;
+    color: white;
+}
+tr button:hover{
+    cursor: pointer;
+}
+
+/* Default styles are already applied in your CSS */
+
+/* Adjust for smaller tablets and large mobile phones */
+@media (max-width: 1024px) {
+    .home {
+        background-size: contain;
+    }
+
+    .logo img {
+        height: 260px;
+        width: 260px;
+    }
+
+    .lionphoto img {
+        height: 480px;
+        width: 400px;
+    }
+
+    .intro {
+        top: 50%;
+        left: 30px;
+        width: 400px;
+    }
+
+    .intro h1 {
+        font-size: 30px;
+    }
+
+    .intro p {
+        font-size: 14px;
+    }
+
+    table tr td button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .about img {
+        height: 400px;
+        width: 80%;
+    }
+}
+
+/* Adjust for mobile phones */
+@media (max-width: 768px) {
+    header table tr td {
+        padding-left: 20px;
+    }
+
+    .logo img {
+        height: 200px;
+        width: 200px;
+    }
+
+    .lionphoto img {
+        height: 360px;
+        width: 300px;
+    }
+
+    .intro {
+        top: 50%;
+        left: 20px;
+        width: 300px;
+    }
+
+    .intro h1 {
+        font-size: 25px;
+    }
+
+    .intro p {
+        font-size: 12px;
+    }
+
+    table tr td button {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+
+    .about img {
+        height: 300px;
+        width: 90%;
+    }
+}
+
+/* Adjust for very small devices */
+@media (max-width: 480px) {
+    header table {
+        font-size: 10px;
+    }
+
+    .logo img {
+        height: 150px;
+        width: 150px;
+    }
+
+    .lionphoto img {
+        height: 240px;
+        width: 200px;
+    }
+
+    .intro {
+        top: 40%;
+        left: 10px;
+        width: 250px;
+    }
+
+    .intro h1 {
+        font-size: 20px;
+    }
+
+    .intro p {
+        font-size: 10px;
+    }
+
+    table tr td button {
+        padding: 4px 8px;
+        font-size: 10px;
+    }
+
+    .about img {
+        height: 200px;
+        width: 100%;
+    }
+}

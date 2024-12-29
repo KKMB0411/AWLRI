@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon"  type="img" href="assets/logo.png">
+    <link rel="stylesheet" href="course.css">
+    <title>Course</title>
+</head>
+<body>
+    <div class="heading">
+        <h1>EXPLORE OUR COURSES</h1>
+    </div>
+    <div class="container">
+        <div class="container1">
+            <img src="assets/ev.jpeg" alt="">
+            <h1>EV COURSE</h1>
+            <p>Understand the principle and technique for designing and constructing efficient sustainable electric vehicle.</p>
+            <a href="https://forms.gle/bc9pNLMvtgrJmcQv5" target="_blank"><button id="btn">COMING SOON</button></a>
+        </div>
+        <div class="container2">
+            <img src="assets/uiux.jpeg" alt="">
+            <h1>UI UX COURSE</h1>
+            <p>Gain expertise in designing intuitive, user-centered interface and seamless user experience for digital products.</p>
+            <a href="" target="_self"><button id="btn">COMING SOON</button></a>
+        </div>
+        <div class="container3">
+            <img src="assets/electronics.jpeg" alt="">
+            <h1>ELECTRONICS</h1>
+            <p>Understand the fundamental principles of electronics and physics, enabling practical application in technology and engineering.</p>
+            <a href="" target="_self"><button id="btn">COMING SOON</button></a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="container1">
+            <img src="assets/vlsi.jpeg" alt="">
+            <h1>Fundamental of VLSI Design</h1>
+            <p>Master the essentials of VLSI design with our fundamentals course—your first step toward innovation in chip design!</p>
+            <a href="https://forms.gle/bc9pNLMvtgrJmcQv5" target="_blank"><button id="btn">ENROLL NOW</button></a>
+        </div>
+        <div class="container2">
+            <img src="assets/embedded.jpeg" alt="">
+            <h1> Embedded System</h1>
+            <p>Unlock the power of Embedded Systems—learn to design, program, and innovate in the world of smart technology!</p>
+            <a href="" target="_self"><button id="btn">COMING SOON</button></a>
+        </div>
+        <div class="container3">
+            <img src="assets/ai.jpeg" alt="">
+            <h1>Ultimate Guide AI & Prompt Engineering</h1>
+            <p>Ultimate Guide to AI & Prompt Engineering-Master the art of crafting intelligent prompts for smarter AI solutions!</p>
+            <a href="" target="_self"><button id="btn">ENROLL NOW</button></a>
+        </div>
+    </div>
+    <div class="form">
+        <h2>ENROLL NOW</h2>
+        <table>
+            <tr>
+                <td><label for="">Para1</label></td>
+                <td><input type="text" placeholder="para1"></td>
+            </tr>
+            <tr>
+                <td><label for="">Para2</label></td>
+                <td><input type="text" placeholder="para2"></td>
+            </tr>
+            <tr>
+                <td><label for="">Para3</label></td>
+                <td><input type="text" placeholder="para3"></td>
+            </tr>
+            <tr>
+                <td><input type="submit"></td>
+            </tr>
+        </table> 
+    </div>
+
+
+    <script>
+    const buttons = document.querySelectorAll('#btn');
+
+    // Loop through each button
+    buttons.forEach(button => {
+    // Check the innerHTML of the button
+    if (button.innerHTML === 'ENROLL NOW') {
+        // Set the background to green
+        button.style.backgroundColor = 'green';
+        button.style.color = 'white'; // Optional for better visibility
+    } else if (button.innerHTML === 'COMING SOON') {
+        // Set the background to red
+        button.style.backgroundColor = 'red';
+        button.style.color = 'white'; // Optional for better visibility
+
+        // Disable the cursor and interaction
+        button.style.cursor = 'not-allowed';
+        button.disabled = true;
+    }
+    });
+    </script>
+</body>
+</html>
