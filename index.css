@@ -134,9 +134,7 @@ tr button:hover{
     cursor: pointer;
 }
 
-/* Default styles are already applied in your CSS */
 
-/* Adjust for smaller tablets and large mobile phones */
 @media (max-width: 1024px) {
     .home {
         background-size: contain;
