@@ -37,7 +37,7 @@ header table tr a{
 }
 .about img{
     height: 500px;
-    width: 60%;
+    width: 95%;
     border-radius: 20px;
 }
 
@@ -68,7 +68,6 @@ header table tr a{
     right: 0px;
     animation-name: lionanimation;
     animation-duration: 2s;
-    
 }
 @keyframes lionanimation{
     0%{
@@ -113,6 +112,8 @@ header table tr a{
 }
 .register{
     display: grid;
+    align-content: center;
+    justify-content: center;
 }
 table{
      margin-left: auto;
@@ -135,17 +136,17 @@ tr button:hover{
 }
 
 @media (max-width: 1024px) {
-    .home {
-        background-size: contain;
-    }
+    
 
     .logo img {
         height: 260px;
         width: 260px;
+        margin-bottom: 87px;
     }
 
     .lionphoto img {
         height: 480px;
+        margin-top: 155px;
         width: 400px;
     }
 
@@ -183,11 +184,13 @@ tr button:hover{
     .logo img {
         height: 200px;
         width: 200px;
+        margin-bottom: 165px;
     }
 
     .lionphoto img {
         height: 360px;
         width: 300px;
+        margin-top: 110px;
     }
 
     .intro {
@@ -198,6 +201,7 @@ tr button:hover{
 
     .intro h1 {
         font-size: 25px;
+        margin-top: -10px;
     }
 
     .intro p {
@@ -224,6 +228,50 @@ tr button:hover{
     .logo img {
         height: 150px;
         width: 150px;
+        margin-bottom: 140px;
+    }
+
+    .lionphoto img {
+        height: 200px;
+        width: 180px;
+        margin-top: 60px;
+    }
+
+    .intro {
+        top: 40%;
+        left: 10px;
+        width: 250px;
+    }
+
+    .intro h1 {
+        font-size: 20px;
+        margin-bottom: 3px;
+        margin-top: -9px;
+    }
+
+    .intro p {
+        font-size: 10px;
+    }
+
+    table tr td button {
+        padding: 4px 8px;
+        font-size: 10px;
+    }
+
+    .about img {
+        height: 200px;
+        width: 100%;
+    }
+}
+@media (max-width: 320px) {
+    header table {
+        font-size: 10px;
+    }
+
+    .logo img {
+        height: 120px;
+        width: 120px;
+        margin-bottom: 177px;
     }
 
     .lionphoto img {
@@ -239,6 +287,8 @@ tr button:hover{
 
     .intro h1 {
         font-size: 20px;
+        font-size: 20px;
+        margin-top: 24%;
     }
 
     .intro p {

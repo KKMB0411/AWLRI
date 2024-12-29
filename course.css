@@ -215,5 +215,85 @@ button {
     transition: box-shadow 0.2s ease-in;
   }
 
-  
+
+/* For screens 1024px and below (e.g., tablets in landscape) */
+@media (max-width: 1024px) {
+    .container {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .container1, .container2, .container3 {
+        width: 30%;
+        height: auto;
+        padding: 15px;
+    }
+    .heading h1 {
+        font-size: 2rem;
+    }
+}
+
+/* For screens 768px and below (e.g., tablets in portrait or small tablets) */
+@media (max-width: 768px) {
+    .container {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    .container1, .container2, .container3 {
+        width: 40%;
+        height: auto;
+        padding: 15px;
+    }
+    .heading h1 {
+        font-size: 1.8rem;
+    }
+    .container button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+
+/* For screens 480px and below (e.g., large phones in portrait) */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+    .container {
+        flex-direction: row;
+        align-items: center;
+    }
+    .container1, .container2, .container3 {
+        width: 80%;
+        height: auto;
+        padding: 10px;
+    }
+    .heading h1 {
+        font-size: 1.5rem;
+    }
+    .container button {
+        font-size: 12px;
+        padding: 8px;
+    }
+}
+
+/* For screens 320px and below (e.g., small phones in portrait) */
+@media (max-width: 320px) {
+    body {
+        font-size: 14px;
+    }
+    .heading h1 {
+        font-size: 1.2rem;
+    }
+    .container1, .container2, .container3 {
+        width: 80%;
+        padding: 8px;
+    }
+    .container button {
+        font-size: 10px;
+        padding: 6px;
+    }
+    .container p {
+        font-size: 12px;
+    }
+}
   
