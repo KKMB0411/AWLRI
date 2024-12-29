@@ -134,7 +134,6 @@ tr button:hover{
     cursor: pointer;
 }
 
-
 @media (max-width: 1024px) {
     .home {
         background-size: contain;
