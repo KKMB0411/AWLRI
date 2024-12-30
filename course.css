@@ -14,6 +14,23 @@ body{
     position: relative;
     padding-bottom: 100px;
 }
+
+header{
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+}
+header tr td{
+    padding-left: 40px;
+}
+header td:hover{
+    cursor: pointer;
+}
+header table tr a{
+    text-decoration: none;
+    color: white;
+}
 .heading{
     color: white;
     margin-top: 20px;
@@ -114,34 +131,6 @@ body img{
     border-radius: 10px;
     color: white;
 }
-.form{
-    display: none;
-    justify-content: center;
-    background-color: rgb(255, 255, 255);
-    border: 1px solid black;
-    font-size: large;
-    height: 600px;
-    width: 500px;
-    margin-left: auto;
-    margin-right: auto;
-    position: absolute;
-    top: 50px;
-    left: 34%;
-
-}
-.form h2{
-    padding: 40px;
-    text-align: center;
-}
-.form table{
-    justify-content: center;
-}
-.form input{
-    background-color: rgb(208, 205, 205,0.5);
-    padding: 5px;
-    border-radius: 2px;
-}
-/* From Uiverse.io by mrhyddenn */ 
 button {
     position: relative;
     padding: 10px 20px;
@@ -162,7 +151,7 @@ button {
   
   button:hover {
     background: rgb(61, 106, 255);
-    box-shadow: 0 0 30px 5px rgba(0, 142, 236, 0.815);
+    box-shadow: 0 0 30px 8px rgba(0, 142, 236, 0.815);
     -webkit-transition: all 0.2s ease-out;
     -moz-transition: all 0.2s ease-out;
     transition: all 0.2s ease-out;
@@ -279,13 +268,17 @@ button {
 /* For screens 320px and below (e.g., small phones in portrait) */
 @media (max-width: 320px) {
     body {
-        font-size: 14px;
+        font-size: 12px;
+    }
+    body img{
+        width: 200px;
+        height: 120px;
     }
     .heading h1 {
         font-size: 1.2rem;
     }
     .container1, .container2, .container3 {
-        width: 80%;
+        width: 70%;
         padding: 8px;
     }
     .container button {
