@@ -38,3 +38,101 @@ header table tr a{
     padding: 20px;
     margin: 20px 60px;
 }
+@media (max-width: 1024px) {
+    header {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    header tr td {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .main h1 {
+        font-size: 1.5em;
+        margin: 53px;
+    }
+
+    .container {
+        margin: 20px 40px;
+        font-size: 20px;
+    }
+}
+
+/* For 768px screens (tablets in portrait) */
+@media (max-width: 768px) {
+    header {
+
+        text-align: center;
+    }
+
+    .main h1 {
+        font-size: 1.2em;
+    }
+
+    .container {
+        margin: 15px 20px;
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    .content {
+        padding-bottom: 70px;
+    }
+}
+
+/* For 480px screens (smaller tablets, large phones) */
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header td {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .main h1 {
+        font-size: 1.1em;
+    }
+
+    .container {
+        margin: 10px 15px;
+        padding: 10px;
+        font-size: 11px;
+    }
+
+    .content {
+        height: 89vh;
+    }
+}
+
+/* For 320px screens (mobile phones) */
+@media (max-width: 320px) {
+    header {
+    
+        text-align: center;
+        font-size: 11px;
+    }
+
+    header td {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .main h1 {
+        font-size: 10px;
+    }
+
+    .container {
+        margin: 10px;
+        padding: 10px;
+        font-size: 9px;;
+    }
+
+    .content {
+        height: 90vh;
+    }
+}
