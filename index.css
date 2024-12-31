@@ -125,7 +125,7 @@ table tr td button{
     border-radius: 5px;
     color: white;
     font-weight: bold;
-    background-color: rgba(29, 29, 35, 0.5);
+    background-color: rgba(15, 151, 0, 0.7);
 }
 table tr td button a{
     text-decoration: none;
@@ -269,21 +269,21 @@ tr button:hover{
     }
 
     .logo img {
-        height: 120px;
-        width: 120px;
-        margin-bottom: 203px;
+        height: 136px;
+        width: 164px;
+        margin-bottom: 195px;
     }
 
     .lionphoto img {
-        height: 240px;
-        width: 200px;
-        margin-top: 84px;
+        height: 228px;
+        width: 203px;
+        margin-top: 110px;
     }
 
     .intro {
-        top: 45%;
-        left: 10px;
-        width: 250px;
+        top: 47%;
+        left: 13px;
+        width: 257px;
     }
 
     .intro h1 {
@@ -297,7 +297,8 @@ tr button:hover{
     }
 
     table tr td button {
-        padding: 4px 8px;
+        border-radius: 4px;
+        padding: 10px 10px;
         font-size: 10px;
     }
 
