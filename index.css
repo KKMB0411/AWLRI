@@ -302,6 +302,9 @@ tr button:hover{
         font-size: 10px;
     }
 
+    .about,.logo,.lionphoto{
+        padding: 40px;
+    }
     .about img {
         height: 250px;
         width: 80%;
