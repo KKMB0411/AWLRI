@@ -42,7 +42,7 @@ header table tr a{
 }
 
 .logo{
-    position: absolute;
+    position: fixed;
     top: 32%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -64,7 +64,7 @@ header table tr a{
 
 .lionphoto{
     top: 50px;
-    position: absolute;
+    position: fixed;
     right: 0px;
     animation-name: lionanimation;
     animation-duration: 2s;
@@ -83,7 +83,7 @@ header table tr a{
     width: 550px;
 }
 .intro{
-    position: absolute;
+    position: fixed;
     top: 55%;
     left: 50px;
     font-weight: bolder;
