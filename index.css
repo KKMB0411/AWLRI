@@ -230,6 +230,9 @@ tr button:hover{
         width: 150px;
         margin-bottom: 140px;
     }
+    .lionphoto{
+        margin-top: 40%;
+    }
 
     .lionphoto img {
         height: 200px;
