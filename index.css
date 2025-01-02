@@ -265,23 +265,23 @@ tr button:hover{
 }
 @media (max-width: 320px) {
     header table {
-        font-size: 10px;
+        font-size: 13px;
     }
 
     .logo img {
         height: 136px;
         width: 164px;
-        margin-bottom: 200px;
+        margin-bottom: 300px;
     }
 
     .lionphoto img {
         height: 228px;
         width: 203px;
-        margin-top: 200px;
+        margin-top: 500px;
     }
 
     .intro {
-        top: 70%;
+        margin-bottom: 50px;
         left: 13px;
         width: 257px;
     }
