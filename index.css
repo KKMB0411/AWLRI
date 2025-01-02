@@ -222,7 +222,7 @@ tr button:hover{
 /* Adjust for very small devices */
 @media (max-width: 480px) {
     header table {
-        font-size: 10px;
+        font-size: 13px;
     }
 
     .logo img {
@@ -234,11 +234,11 @@ tr button:hover{
     .lionphoto img {
         height: 200px;
         width: 180px;
-        margin-top: 60px;
+        margin-top: 50%;
     }
 
     .intro {
-        top: 40%;
+        top: 50%;
         left: 10px;
         width: 250px;
     }
