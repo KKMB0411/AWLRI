@@ -277,11 +277,11 @@ tr button:hover{
     .lionphoto img {
         height: 228px !important;
         width: 203px !important;
-        margin-top: 500px !important;
+        margin-top: 50% !important;
     }
 
     .intro {
-        margin-bottom: 50px !important;
+        margin-top: 80% !important;
         left: 13px !important;
         width: 257px !important;
     }
