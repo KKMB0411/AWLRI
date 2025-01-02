@@ -42,7 +42,7 @@ header table tr a{
 }
 
 .logo{
-    position: fixed;
+    position: absolute;
     top: 32%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -64,7 +64,7 @@ header table tr a{
 
 .lionphoto{
     top: 50px;
-    position: fixed;
+    position: absolute;
     right: 0px;
     animation-name: lionanimation;
     animation-duration: 2s;
@@ -83,7 +83,7 @@ header table tr a{
     width: 550px;
 }
 .intro{
-    position: fixed;
+    position: absolute;
     top: 55%;
     left: 50px;
     font-weight: bolder;
@@ -125,7 +125,7 @@ table tr td button{
     border-radius: 5px;
     color: white;
     font-weight: bold;
-    background-color: rgba(255, 0, 0, 0.5)
+    background-color: rgba(15, 151, 0, 0.7);
 }
 table tr td button a{
     text-decoration: none;
@@ -178,7 +178,7 @@ tr button:hover{
 /* Adjust for mobile phones */
 @media (max-width: 768px) {
     header table tr td {
-        padding-left: 21px;
+        padding-left: 20px;
     }
 
     .logo img {
@@ -265,44 +265,44 @@ tr button:hover{
 }
 @media (max-width: 320px) {
     header table {
-        font-size: 13px !important;  /* Force font-size */
+        font-size: 10px;
     }
 
     .logo img {
-        height: 136px !important;
-        width: 164px !important;
-        margin-bottom: 300px !important;
+        height: 136px;
+        width: 164px;
+        margin-bottom: 195px;
     }
 
     .lionphoto img {
-        height: 228px !important;
-        width: 203px !important;
-        margin-top: 50% !important;
+        height: 228px;
+        width: 203px;
+        margin-top: 110px;
     }
 
     .intro {
-        margin-top: 80% !important;
-        left: 13px !important;
-        width: 257px !important;
+        top: 47%;
+        left: 13px;
+        width: 257px;
     }
 
     .intro h1 {
-        font-size: 20px !important;
-        margin-top: 24% !important;
+        font-size: 20px;
+        font-size: 20px;
+        margin-top: 24%;
     }
 
     .intro p {
-        font-size: 10px !important;
+        font-size: 10px;
     }
 
     table tr td button {
-        border-radius: 4px !important;
-        padding: 10px 10px !important;
-        font-size: 10px !important;
+        border-radius: 4px;
+        padding: 10px 10px;
+        font-size: 10px;
     }
-
     .about img {
-        height: 250px !important;
-        width: 80% !important;
+        height: 250px;
+        width: 80%;
     }
 }
