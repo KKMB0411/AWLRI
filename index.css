@@ -125,7 +125,7 @@ table tr td button{
     border-radius: 5px;
     color: white;
     font-weight: bold;
-    background-color: rgba(15, 151, 0, 0.7);
+    background-color: red(15, 151, 0, 0.7);
 }
 table tr td button a{
     text-decoration: none;
