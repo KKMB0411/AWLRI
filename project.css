@@ -2,14 +2,24 @@
     border: 0px;
     margin: 0px;
     top: 0px;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;   
+}
+body{
+    background-image: url(assets/test2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    padding-bottom: 100px;
 }
 
 header{
     color: white;
     padding: 15px;
     display: flex;
-    justify-content: center
+    justify-content: center;
 }
 header tr td{
     padding-left: 40px;
@@ -21,119 +31,266 @@ header table tr a{
     text-decoration: none;
     color: white;
 }
-.main{
-    text-align: center;
+.heading{
     color: white;
+    margin-top: 20px;
+    text-align: center;
 }
-.content{
-    height: 100%;
-    padding-bottom: 90px;
-    background-image: url(assets/test2.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+body img{
+    height: 150px;
+    width: 250px;
 }
 .container{
-    background-color:rgb(194, 221, 219);
-    border: 1px solid black;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.container1{
+    text-align: center;
     padding: 20px;
-    margin: 20px 60px;
-    opacity: 0.8;
+    font-weight: bold;
+    width: 280px;
+    height:400px;
+    background-color: rgba(255, 255, 255, 0.2);
+    animation-name: container1;
+    animation-duration: 2s;
 }
+.container1 h1{
+    padding-bottom: 10px;
+}
+.container1 p{
+    padding-bottom: 10px;
+}
+.container1 button{
+    padding: 10px 40px 10px 40px;
+    font-weight: bold;
+    border-radius: 2px;
+    background-color: green;
+}
+.container2{
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+    width: 280px;
+    height:400px;
+    background-color: rgba(255, 255, 255, 0.2);
+    animation-name: container2;
+    animation-duration: 2s;
+}
+.container2 h1{
+    padding-bottom: 10px;
+}
+.container2 p{
+    padding-bottom: 10px;
+}
+.container2 button{
+    padding: 10px 40px 10px 40px;
+    font-weight: bold;
+    background-color: green;
+    border-radius: 2px;
+}
+@keyframes container2{
+    0%{
+        transform: translateY(100%);        
+    }
+    100%{
+
+        top: 0px;
+    }
+}
+.container3{
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+    width: 280px;
+    height:420px;
+    background-color: rgba(255, 255, 255, 0.2);
+    animation-name: container1;
+    animation-duration: 2s;
+}
+.container3 h1{
+    padding-bottom: 10px;
+}
+.container3 p{
+    padding-bottom: 10px;
+}
+.container3 button{
+    padding: 10px 40px 10px 40px;
+    font-weight: bold;
+    background-color: green;
+    border-radius: 2px;
+}
+@keyframes container1{
+    0%{
+        transform: translateY(-100%);        
+    }
+    100%{
+
+        top: 0px;
+    }
+}
+.container button:hover{
+    background-color: green;
+    border-radius: 10px;
+    color: white;
+}
+button {
+    position: relative;
+    padding: 10px 20px;
+    border-radius: 7px;
+    background-color: green;
+    border: 1px solid rgb(61, 106, 255);
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    background: transparent;
+    color: #fff;
+    overflow: hidden;
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+  }
+  
+  button:hover {
+    background: rgb(61, 106, 255);
+    box-shadow: 0 0 30px 8px rgba(0, 142, 236, 0.815);
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+  }
+  
+  button:hover::before {
+    -webkit-animation: sh02 0.5s 0s linear;
+    -moz-animation: sh02 0.5s 0s linear;
+    animation: sh02 0.5s 0s linear;
+  }
+  
+  button::before {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 86%;
+    position: absolute;
+    top: 7%;
+    left: 0%;
+    opacity: 0;
+    background: #fff;
+    box-shadow: 0 0 50px 30px #fff;
+    -webkit-transform: skewX(-20deg);
+    -moz-transform: skewX(-20deg);
+    -ms-transform: skewX(-20deg);
+    -o-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+  }
+  
+  @keyframes sh02 {
+    from {
+      opacity: 0;
+      left: 0%;
+    }
+  
+    50% {
+      opacity: 1;
+    }
+  
+    to {
+      opacity: 0;
+      left: 100%;
+    }
+  }
+  
+  button:active {
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: box-shadow 0.2s ease-in;
+    -moz-transition: box-shadow 0.2s ease-in;
+    transition: box-shadow 0.2s ease-in;
+  }
+
+
+/* For screens 1024px and below (e.g., tablets in landscape) */
 @media (max-width: 1024px) {
-    header {
-        font-size: 16px;
-        text-align: center;
-    }
-
-    header tr td {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-    .main h1 {
-        font-size: 1.5em;
-        margin: 53px;
-    }
-
     .container {
-        margin: 20px 40px;
-        font-size: 20px;
+        flex-wrap: wrap;
+        gap: 20px;
     }
-}
-
-/* For 768px screens (tablets in portrait) */
-@media (max-width: 768px) {
-    header {
-
-        text-align: center;
-    }
-
-    .main h1 {
-        font-size: 1.2em;
-    }
-
-    .container {
-        margin: 15px 20px;
+    .container1, .container2, .container3 {
+        width: 30%;
+        height: auto;
         padding: 15px;
-        font-size: 16px;
     }
-
-    .content {
-        padding-bottom: 70px;
+    .heading h1 {
+        font-size: 2rem;
     }
 }
 
-/* For 480px screens (smaller tablets, large phones) */
+/* For screens 768px and below (e.g., tablets in portrait or small tablets) */
+@media (max-width: 768px) {
+    .container {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    .container1, .container2, .container3 {
+        width: 40%;
+        height: auto;
+        padding: 15px;
+    }
+    .heading h1 {
+        font-size: 1.8rem;
+    }
+    .container button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+
+/* For screens 480px and below (e.g., large phones in portrait) */
 @media (max-width: 480px) {
-    header {
-        flex-direction: column;
-        text-align: center;
+    body {
+        font-size: 14px;
     }
-
-    header td {
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-
-    .main h1 {
-        font-size: 1.1em;
-    }
-
     .container {
-        margin: 10px 15px;
-        padding: 10px;
-        font-size: 11px;
+        flex-direction: row;
+        align-items: center;
     }
-
-    .content {
-        height: 89vh;
+    .container1, .container2, .container3 {
+        width: 80%;
+        height: auto;
+        padding: 10px;
+    }
+    .heading h1 {
+        font-size: 1.5rem;
+    }
+    .container button {
+        font-size: 12px;
+        padding: 8px;
     }
 }
 
-/* For 320px screens (mobile phones) */
+/* For screens 320px and below (e.g., small phones in portrait) */
 @media (max-width: 320px) {
-    header {
-    
-        text-align: center;
-        font-size: 11px;
+    body {
+        font-size: 12px;
     }
-
-    header td {
-        padding-left: 5px;
-        padding-right: 5px;
+    body img{
+        width: 200px;
+        height: 120px;
     }
-
-    .main h1 {
+    .heading h1 {
+        font-size: 1.2rem;
+    }
+    .container1, .container2, .container3 {
+        width: 70%;
+        padding: 8px;
+    }
+    .container button {
         font-size: 10px;
+        padding: 6px;
     }
-
-    .container {
-        margin: 10px;
-        padding: 10px;
-        font-size: 9px;;
-    }
-
-    .content {
-        height: 90vh;
+    .container p {
+        font-size: 12px;
     }
 }
+  

@@ -36,8 +36,7 @@ header table tr a{
     display: none;
 }
 .about img{
-    height: 500px;
-    width: 95%;
+    width: 100%;
     border-radius: 20px;
 }
 
