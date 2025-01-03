@@ -79,7 +79,7 @@ header table tr a{
 }
 .lionphoto img{
     height: 640px;
-    width: 550px;
+    width: 585px;
 }
 .intro{
     position: absolute;
@@ -230,7 +230,7 @@ tr button:hover{
         margin-bottom: 160px;
     }
     .lionphoto{
-        margin-bottom: 5%;
+        margin-top: 50%;
     }
 
     .lionphoto img {
@@ -239,7 +239,7 @@ tr button:hover{
     }
 
     .intro {
-        top: 30%;
+        top: 40%;
         left: 10px;
         width: 250px;
     }
