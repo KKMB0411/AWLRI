@@ -230,18 +230,23 @@ tr button:hover{
         margin-bottom: 160px;
     }
     .lionphoto{
-        margin-top: 50%;
+        margin-top: 70%;
     }
 
     .lionphoto img {
         height: 200px;
-        width: 180px;
+        width: 170px;
     }
 
     .intro {
-        top: 40%;
-        left: 10px;
         width: 250px;
+        position: absolute;
+        top: 40%;
+        left: 20px;
+        font-weight: bolder;
+        letter-spacing: 2px;
+        animation-name: introanimation1;
+        animation-duration: 2s;
     }
 
     .intro h1 {
@@ -254,14 +259,26 @@ tr button:hover{
         font-size: 10px;
     }
 
+    @keyframes introanimation1{
+        0%{
+            transform:translateX(-110%);
+        }
+        100%{
+            top: 40%;
+            left: 20px;
+        }
+    }
+
     table tr td button {
         padding: 4px 8px;
         font-size: 10px;
     }
 
     .about img {
-        height: 200px;
-        width: 100%;
+        display: block;
+        margin: 0 auto; 
+        height: auto; 
+        max-width: 100%; 
     }
 }
 @media (max-width: 320px) {
